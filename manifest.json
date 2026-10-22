@@ -1,0 +1,62 @@
+{
+  "name": "שולחן ערוך",
+  "short_name": "שולחן ערוך",
+  "description": "מערכת ניהול קהילת פוקר פרטית",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f1f1a",
+  "theme_color": "#0f1f1a",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "id": "/",
+  "handle_links": "preferred",
+  "capture_links": "existing-client-navigate",
+  "launch_handler": {
+    "client_mode": [
+      "navigate-existing",
+      "auto"
+    ]
+  },
+  "icons": [
+    {
+      "src": "/icons/app-icon-blue-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/app-icon-blue.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/app-icon-green-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/app-icon-green.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/app-icon-pink-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/app-icon-pink.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/app-icon-red-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/app-icon-red.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

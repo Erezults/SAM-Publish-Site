@@ -1,7 +1,7 @@
 {
   "name": "SAM DEV",
   "short_name": "SAM DEV",
-  "description": "SAM preview (DEV) — sam-preview.erezults.com",
+  "description": "SAM preview (DEV)",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#3a0000",

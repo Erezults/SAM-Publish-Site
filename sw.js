@@ -58,7 +58,14 @@ self.addEventListener('notificationclick', (event) => {
   
   event.notification.close();
   
-  const urlToOpen = event.notification.data?.url || '/';
+  // Only same-origin targets (S-064): a push can never steer a member to an outside page
+  let urlToOpen = '/';
+  try {
+    const target = new URL(event.notification.data?.url || '/', self.location.origin);
+    if (target.origin === self.location.origin) urlToOpen = target.href;
+  } catch (e) {
+    urlToOpen = '/';
+  }
   
   event.waitUntil(
     clients.matchAll({ type: 'window', includeUncontrolled: true })

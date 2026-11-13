@@ -1,0 +1,1 @@
+import{s as a}from"./appMount-CR0pOWw_.js";async function i(e){try{const{data:r,error:t}=await a.functions.invoke("update-birthday-shields");t?console.warn("[birthday-refresh] failed",e,t):console.log("[birthday-refresh] ok",e,r)}catch(r){console.warn("[birthday-refresh] threw",e,r)}}export{i as t};
